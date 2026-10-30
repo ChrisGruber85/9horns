@@ -91,22 +91,25 @@
                         </header>
                         <div class="content">
                             <p><strong>Bucht 9horns für euer Event.</strong> Schreibt uns einfach eine Nachricht für Booking-Anfragen, Presse oder andere Anliegen. Wir melden uns so schnell wie möglich bei euch!</p>
-                            <form>
+                            
+                            <form action="https://formspree.io/f/xjyyonbl" method="POST">
                                 <div class="fields">
                                     <div class="field half">
-                                        <input type="text" name="name" id="name" placeholder="Name" />
+                                        <input type="text" name="name" id="name" placeholder="Name" required />
                                     </div>
                                     <div class="field half">
-                                        <input type="email" name="email" id="email" placeholder="E-Mail Adresse" />
+                                        <input type="email" name="email" id="email" placeholder="E-Mail Adresse" required />
                                     </div>
                                     <div class="field">
-                                        <textarea name="message" id="message" placeholder="Deine Nachricht an uns" rows="7"></textarea>
+                                        <textarea name="message" id="message" placeholder="Deine Nachricht an uns" rows="7" required></textarea>
                                     </div>
                                 </div>
+                                <input type="hidden" name="_subject" value="Neue Booking-Anfrage über die 9horns Website!">
                                 <ul class="actions">
                                     <li><input type="submit" value="Nachricht senden" class="button primary" /></li>
                                 </ul>
                             </form>
+
                         </div>
                         <footer>
                             <ul class="items">
